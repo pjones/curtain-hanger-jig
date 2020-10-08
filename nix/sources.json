@@ -1,0 +1,38 @@
+{
+    "niv": {
+        "branch": "master",
+        "description": "Easy dependency management for Nix projects",
+        "homepage": "https://github.com/nmattia/niv",
+        "owner": "nmattia",
+        "repo": "niv",
+        "rev": "9d35b9e4837ab88517210b1701127612c260eccf",
+        "sha256": "0q50xhnm8g2yfyakrh0nly4swyygxpi0a8cb9gp65wcakcgvzvdh",
+        "type": "tarball",
+        "url": "https://github.com/nmattia/niv/archive/9d35b9e4837ab88517210b1701127612c260eccf.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nix-openscad": {
+        "branch": "master",
+        "description": "Derivation to compile OpenSCAD files to STL",
+        "homepage": null,
+        "owner": "pjones",
+        "repo": "nix-openscad",
+        "rev": "48233bce8774b0b4d53d6f0942a6ebd0084eb750",
+        "sha256": "0w0idh45p4zrz37ryy5rzv7pqvzwm6s0h96dddmxp9sds3v1a03b",
+        "type": "tarball",
+        "url": "https://github.com/pjones/nix-openscad/archive/48233bce8774b0b4d53d6f0942a6ebd0084eb750.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "nixos-20.09",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ad3a5d5092eb24c525d6dd1f8035cf2ec0c5b0b2",
+        "sha256": "04v6fw3xsxgi8jdfjrchls7i96zm7mdn5nzrvgk0x229xxidyyar",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/ad3a5d5092eb24c525d6dd1f8035cf2ec0c5b0b2.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}
