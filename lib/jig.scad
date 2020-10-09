@@ -1,4 +1,4 @@
-default_thickness = 2;
+default_thickness = 3;
 
 // A guide arm that goes into one side of a windowsill corner.
 module curtain_guide(guide_width, guide_length, thickness) {
@@ -13,18 +13,26 @@ module curtain_guide(guide_width, guide_length, thickness) {
 module curtain_guides(guide_width, guide_length, thickness)
 {
   // Left arm:
-  translate([ -(guide_length/2 + guide_width/2), 0, 0])
+  translate([-(guide_length/2),
+             guide_width/2 - thickness,
+             0])
     curtain_guide(guide_width, guide_length, thickness);
 
   // Right arm:
-  translate([0, -(guide_length/2 + guide_width/2), 0])
+  translate([guide_width/2 - thickness,
+             -(guide_length/2),
+             , 0])
     rotate([0, 0, -90])
     mirror([1, 0, 0])
     curtain_guide(guide_width, guide_length, thickness);
 
   // Connection point.
-  translate([0, 0, thickness/2])
-    cube([guide_width, guide_width, thickness], center=true);
+  translate([guide_width/2 - thickness,
+             guide_width/2 - thickness,
+             thickness/2])
+    cube([guide_width,
+          guide_width,
+          thickness], center=true);
 }
 
 // https://en.wikipedia.org/wiki/Solution_of_triangles#Two_sides_and_the_included_angle_given_(SAS)
